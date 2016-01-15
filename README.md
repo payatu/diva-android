@@ -40,6 +40,15 @@ Yes, you can help by sending us the details of vulnerabilities that we can imple
 * The Source can be downloaded from github - https://github.com/payatu/diva-android
 * You can also download the debug version of the app from http://www.payatu.com/damn-insecure-and-vulnerable-app/
 
+## How to compile Diva?
+* Download the source
+* Open the project in Android Studio
+* For Native library - open command line
+  * $ cd <Project-dir>/app/src/main/jni
+  * $ make (This needs to be done only once, unless you make changes to the native code - in which case run "make clean && make")  
+  * This will compile the native library and copy all the compiled versions in directory jniLibs which is required when building the app
+* From the menu bar: Build->Make Project  or  Run->Run App
+
 ## How to run Diva?
 * Compile/download the app
 * On your phone settings. Go to security and check Unknown Sources checkbox. This allows you to install apps outside of play store. You don’t need to do this if you are installing the app on an emulator.
