@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="jakhar.aseem.diva.AccessControl2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aci2_intro"
+        android:id="@+id/aci2textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/material_grey_600"
+        android:gravity="fill_horizontal|fill_vertical"
+        android:textAlignment="gravity" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aci2rgroup"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+     <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aci2_regnow"
+        android:id="@+id/aci2rbregnow"
+        android:layout_centerHorizontal="true"
+         />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aci2_alreadyreg"
+        android:id="@+id/aci2rbalreadyreg"
+        android:layout_centerHorizontal="true" />
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aci2_view"
+        android:id="@+id/aci1button"
+        android:onClick="viewAPICredentials"
+        android:layout_below="@id/aci2rgroup"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

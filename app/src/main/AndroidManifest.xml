@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jakhar.aseem.diva" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogActivity"
+            android:label="@string/d1" >
+        </activity>
+        <activity
+            android:name=".HardcodeActivity"
+            android:label="@string/d2" >
+        </activity>
+        <activity
+            android:name=".InsecureDataStorage1Activity"
+            android:label="@string/d3" >
+        </activity>
+        <activity
+            android:name=".InsecureDataStorage2Activity"
+            android:label="@string/d4" >
+        </activity>
+        <activity
+            android:name=".InsecureDataStorage3Activity"
+            android:label="@string/d5" >
+        </activity>
+        <activity
+            android:name=".InsecureDataStorage4Activity"
+            android:label="@string/d6" >
+        </activity>
+        <activity
+            android:name=".SQLInjectionActivity"
+            android:label="@string/d7" >
+        </activity>
+        <activity
+            android:name=".InputValidation2URISchemeActivity"
+            android:label="@string/d8" >
+        </activity>
+        <activity
+            android:name=".AccessControl1Activity"
+            android:label="@string/d9" >
+        </activity>
+        <activity
+            android:name=".APICredsActivity"
+            android:label="@string/apic_label" >
+            <intent-filter>
+                <action android:name="jakhar.aseem.diva.action.VIEW_CREDS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AccessControl2Activity"
+            android:label="@string/d10" >
+        </activity>
+        <activity
+            android:name=".APICreds2Activity"
+            android:label="@string/apic2_label" >
+            <intent-filter>
+                <action android:name="jakhar.aseem.diva.action.VIEW_CREDS2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".NotesProvider"
+            android:authorities="jakhar.aseem.diva.provider.notesprovider"
+            android:enabled="true"
+            android:exported="true" >
+        </provider>
+
+        <activity
+            android:name=".AccessControl3Activity"
+            android:label="@string/d11" >
+        </activity>
+        <activity
+            android:name=".Hardcode2Activity"
+            android:label="@string/d12" >
+        </activity>
+        <activity
+            android:name=".AccessControl3NotesActivity"
+            android:label="@string/pnotes" >
+        </activity>
+        <activity android:name=".InputValidation3Activity"
+            android:label="@string/d13" >
+        </activity>
+    </application>
+
+</manifest>

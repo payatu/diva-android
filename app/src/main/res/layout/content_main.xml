@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/sc1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView android:text="@string/dwelcome" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textWelcome"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dintro"
+        android:id="@+id/textIntro"
+        android:elegantTextHeight="false"
+        android:layout_below="@+id/textWelcome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="fill_horizontal|fill|fill_vertical"
+        android:textAlignment="gravity" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/d1"
+        android:id="@+id/d1button"
+        android:layout_below="@+id/textIntro"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:onClick="startChallenge" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/d2"
+        android:id="@+id/d2button"
+        android:onClick="startChallenge"
+        android:layout_below="@+id/d1button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/d3"
+        android:id="@+id/d3button"
+        android:onClick="startChallenge"
+        android:layout_below="@+id/d2button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/d4"
+        android:id="@+id/d4button"
+        android:onClick="startChallenge"
+        android:layout_below="@+id/d3button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/d5"
+        android:id="@+id/d5button"
+        android:onClick="startChallenge"
+        android:layout_below="@+id/d4button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/d6"
+        android:id="@+id/d6button"
+        android:onClick="startChallenge"
+        android:layout_below="@+id/d5button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/d7"
+        android:id="@+id/d7button"
+        android:onClick="startChallenge"
+        android:layout_below="@+id/d6button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d8"
+            android:id="@+id/d8button"
+            android:onClick="startChallenge"
+            android:layout_below="@+id/d7button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d9"
+            android:id="@+id/d9button"
+            android:onClick="startChallenge"
+            android:layout_below="@+id/d8button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d10"
+            android:id="@+id/d10button"
+            android:onClick="startChallenge"
+            android:layout_below="@+id/d9button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d11"
+            android:id="@+id/d11button"
+            android:onClick="startChallenge"
+            android:layout_below="@+id/d10button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d12"
+            android:id="@+id/d12button"
+            android:onClick="startChallenge"
+            android:layout_below="@+id/d11button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d13"
+            android:id="@+id/d13button"
+            android:onClick="startChallenge"
+            android:layout_below="@+id/d12button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

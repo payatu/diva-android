@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_weight="40"
+        android:textAlignment="viewStart"
+        android:gravity="start"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/note_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_weight="50.56"
+        android:gravity="start"
+        android:textAlignment="viewStart" />
+</LinearLayout>

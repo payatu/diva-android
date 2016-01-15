@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Diva</string>
+    <string name="action_settings">Settings</string>
+    <string name="dwelcome"><b>Welcome to DIVA!</b></string>
+    <string name="dintro">DIVA (Damn insecure and vulnerable App) is an App intentionally
+                          designed to be insecure. The aim of the App is to teach
+                          developers/QA/security professionals, flaws that are
+                          generally present in the Apps due poor or insecure coding
+                          practices. If you are reading this you want to either learn
+                          App pentesting or secure coding and I sincerely hope that
+                          DIVA solves your purpose. So, sit back and enjoy the ride.</string>
+    <string name="chk_pin">check_pin</string>
+    <string name="d1">1. Insecure Logging</string>
+    <string name="d2">2. Hardcoding Issues - Part 1</string>
+    <string name="d3">3. Insecure Data Storage - Part 1</string>
+    <string name="d4">4. Insecure Data Storage - Part 2</string>
+    <string name="d5">5. Insecure Data Storage - Part 3</string>
+    <string name="d6">6. Insecure Data Storage - Part 4</string>
+    <string name="d7">7. Input Validation Issues - Part 1</string>
+    <string name="d8">8. Input Validation Issues - Part 2</string>
+    <string name="d9">9. Access Control Issues - Part 1</string>
+    <string name="d10">10. Access Control Issues - Part 2</string>
+    <string name="d11">11. Access Control Issues - Part 3</string>
+    <string name="d12">12. Hardcoding Issues - Part 2</string>
+    <string name="d13">13. Input Validation Issues - Part 3</string>
+    <string name="log_intro"><b>Objective</b>: Find out what is being logged where/how and the vulnerable code.\n
+                             <b>Hint</b>: Insecure logging occurs when developers intentionally
+                             or unintentionally log sensitive information such as
+                             credentials, session IDs, financial details etc.</string>
+    <string name="log_enter">Enter your credit card number</string>
+    <string name="log_checkout">Check out</string>
+    <string name="hardcode_intro"><b>Objective</b>: Find out what is hardcoded a`nd where.\n
+                             <b>Hint</b>: Developers sometimes will hardcode sensitive information for ease.</string>
+    <string name="hardcode_enter">Enter the vendor key</string>
+    <string name="hardcode_access">ACCESS</string>
+    <string name="ids1_intro"><b>Objective</b>: Find out where/how the credentials are being stored and the vulnerable code.\n
+                             <b>Hint</b>: Insecure data storage is the result of storing confidential information insecurely
+                             on the system i.e. poor encryption, plain text, access control issues etc. </string>
+    <string name="ids1_user">Enter 3rd party service user name</string>
+    <string name="ids1_password">Enter 3rd party service password</string>
+    <string name="ids1_save">SAVE</string>
+    <string name="ivi1_intro"><b>Objective</b>: Try to access all user data without knowing any user name. There are three users
+                             by default and your task is to output data of all the three users with a single malicious search.\n
+                             <b>Hint</b>: Improper or no input validation issue arise when the input is not filtered or validated
+                             before using it. When developing components that take input from outside, always validate it.
+                             For ease of testing there are three users already present in the database, for example one of them is
+                             admin, you can try searching for admin to test the output.</string>
+    <string name="ivi1_enter">Enter user name to search</string>
+    <string name="ivi1_search">SEARCH</string>
+    <string name="ivi2_intro"><b>Objective</b>: Try accessing any sensitive information apart from a web URL.\n
+                             <b>Hint</b>: Improper or no input validation issue arise when the input is not filtered or validated
+                             before using it. When developing components that take input from outside, always validate it.
+                             </string>
+    <string name="ivi2_enter">Enter the URL to view</string>
+
+    <string name="ivi2_view">VIEW</string>
+
+    <string name="aci1_intro"><b>Objective</b>: You are able to access the API credentials when you click the button. Now, try to access the API credentials from outside the app.\n
+                              <b>Hint:</b>Components of an app can be accessed from other apps or users if they are not
+                              properly protected. Components such as activities, services, content providers are prone to this.</string>
+    <string name="aci1_view">VIEW API CREDENTIALS</string>
+    <string name="apic_label">Vendor API Credentials</string>
+
+    <string name="aci2_intro"><b>Objective</b>: You are able to access the Third Party app TVEETER API credentials after you
+                              have registered with Tveeter.
+                              The App requests you to register online and the vendor gives you a pin, which you can use to register
+                              with the app. Now, try to access the API credentials from outside the app without knowing the PIN.
+                              This is a business logic problem so you may need to see the code.\n
+                              <b>Hint:</b>Components of an app can be accessed from other apps or users if they are not
+                              properly protected and some may also accept external inputs. Components such as activities,
+                              services, content providers are prone to this.</string>
+    <string name="aci2_alreadyreg">Already Registered.</string>
+    <string name="aci2_regnow">Register Now.</string>
+    <string name="apic2_enter">Enter PIN received from Tveeter</string>
+    <string name="aci2_view">VIEW TVEETER API CREDENTIALS</string>
+    <string name="apic2_label">Tveeter API Credentials</string>
+    <string name="notesprovider_url">content://jakhar.aseem.diva.provider.notesprovider/notes</string>
+
+    <string name="aci3_intro"><b>Objective</b>: This is a private notes application. You can create a PIN
+                              once and access your notes after entering the correct pin. Now, try to access the private notes
+                              from outside the app without knowing the PIN.\n
+                              <b>Hint:</b>Components of an app can be accessed from other apps or users if they are not
+                              properly protected and some may also accept external inputs. Components such as activities,
+                              services, content providers are prone to this.</string>
+    <string name="pkey">notespin</string>
+    <string name="pnotes">Diva Private Notes</string>
+    <string name="aci3_enterpin">Enter 4 Digit PIN</string>
+    <string name="aci3_createpin">CREATE/CHANGE PIN</string>
+    <string name="aci3_gotonotes">GO TO PRIVATE NOTES</string>
+    <string name="aci3_accessnotes">ACCESS PRIVATE NOTES</string>
+    <string name="ivi3_intro"><b>Objective</b>: This is a Missile Launch App. Spread love not War! DOS the Damn thing! Your
+                             objective here is to NOT find the code and then launch the missiles, rather it is
+                             to crash the app (and then find the root cause the crash).\n
+                             <b>Hint</b>: Improper or no input validation issue arise when the input is not filtered or validated
+                             before using it. When developing components that take input from outside, always validate it.
+                             This is a classic memory corruption vulnerability. If you can get code execution, I would love to hear
+                             from you. I dont expect anyone to go that far though.</string>
+    <string name="ivi3_enter">Enter Launch Code for WOMD</string>
+    <string name="ivi3_stop">PUSH THE RED BUTTON</string>
+</resources>
