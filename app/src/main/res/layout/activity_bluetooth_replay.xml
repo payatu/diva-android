@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="jakhar.aseem.diva.BluetoothReplayActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/br_intro"
+        android:id="@+id/brtextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/material_grey_600"
+        android:gravity="fill_horizontal|fill_vertical"
+        android:textAlignment="gravity" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/brgroup"
+        android:orientation="horizontal"
+        android:layout_below="@+id/brtextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp">
+
+     <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/br_off"
+        android:id="@+id/br_off"
+         />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/br_on"
+        android:id="@+id/br_on"
+         />
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/br_view"
+        android:id="@+id/br_button"
+        android:onClick="doIt"
+        android:layout_below="@id/brgroup"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

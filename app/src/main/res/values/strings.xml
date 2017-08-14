@@ -23,6 +23,7 @@
     <string name="d11">11. Access Control Issues - Part 3</string>
     <string name="d12">12. Hardcoding Issues - Part 2</string>
     <string name="d13">13. Input Validation Issues - Part 3</string>
+    <string name="d14">14. Bluetooth Replay Issues</string>
     <string name="log_intro"><b>Objective</b>: Find out what is being logged where/how and the vulnerable code.\n
                              <b>Hint</b>: Insecure logging occurs when developers intentionally
                              or unintentionally log sensitive information such as
@@ -97,4 +98,11 @@
                              from you. I dont expect anyone to go that far though.</string>
     <string name="ivi3_enter">Enter Launch Code for WOMD</string>
     <string name="ivi3_stop">PUSH THE RED BUTTON</string>
+    <string name="br_intro"><b>Objective</b>: With properly paired Bluetooth device, this app lets you talk to the device and
+                              control some appliances. Implement a similar app in your favourite language.\n
+                              <b>Hint:</b>Reverse the protocol used here and look for libraries in your favourite language
+                               to implement a replay attack.</string>
+    <string name="br_off">OFF</string>
+    <string name="br_on">ON</string>
+    <string name="br_view">GO!</string>
 </resources>

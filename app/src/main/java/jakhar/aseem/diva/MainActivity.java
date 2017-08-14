@@ -128,5 +128,9 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(this, InputValidation3Activity.class);
             startActivity(i);
         }
+        else if (view == findViewById(R.id.d14button)) {
+            Intent i = new Intent(this, BluetoothReplayActivity.class);
+            startActivity(i);
+        }
     }
 }
