@@ -169,6 +169,16 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d14"
+            android:id="@+id/d14button"
+            android:onClick="startChallenge"
+            android:layout_below="@+id/d13button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
     </RelativeLayout>
 </ScrollView>
 </RelativeLayout>
