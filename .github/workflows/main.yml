@@ -1,0 +1,40 @@
+# This is a basic workflow to help you get started with Actions
+
+name: MobSF CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  MOBSF_IMG:
+    opensecurity/mobile-security-framework-mobsf:latest
+  MOBSF_API_KEY:
+    d41d8cd98f00b204e9800998ecf8427e859ea234
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@master
+
+    # Pull MobSF Docker Image
+    - name: Pull MobSF Docker Image
+      run: docker pull ${MOBSF_IMG}
+
+    # Runs a MobSF Scan
+    - name: Run a scan
+      run: |
+        docker run -e MOBSF_API_KEY=${MOBSF_API_KEY} -t ${MOBSF_IMG} || true
+        zip -r mobsf_files.zip .
