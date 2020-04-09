@@ -32,13 +32,10 @@ jobs:
     # Pull MobSF Docker Image
     - name: Pull MobSF Docker Image
       run: docker pull ${MOBSF_IMG}
-
-    # Runs a MobSF Scan
-    - name: Run MobSF Server
+       
+    # Scan Source Code
+    - name: Run MobSF Scan
       run: |
         docker run -d -e MOBSF_API_KEY=${MOBSF_API_KEY} -t ${MOBSF_IMG} || true
-    # Scan Source Code
-    - name: Scan Source
-      run: |
         zip -r mobsf_files.zip .
         curl -F 'file=@mobsf_files.zip' http://localhost:8000/api/v1/upload -H "Authorization:${MOBSF_API_KEY}"
