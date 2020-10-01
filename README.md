@@ -4,7 +4,7 @@
 DIVA (Damn insecure and vulnerable App) is an App intentionally designed to be insecure. We are releasing the Android version of Diva. We thought it would be a nice way to start the year by contributing something to the security community. The aim of the App is to teach developers/QA/security professionals, flaws that are generally present in the Apps due poor or insecure coding practices. If you are reading this, you want to either learn App pentesting or secure coding and I sincerely hope that DIVA solves your purpose. So, sit back and enjoy the ride.
 
 ## Why name it Diva?
-No offense to anyone, but I was bored with the name DV* and decided to name it more fancy :)
+No offense to anyone, but I was bored with the name DV* and decided to name it more fancy and it sounds cool too :) 
 
 ## Who can use Diva?
 The idea originated, from a developer’s perspective. The Android security training for developers becomes slightly boring with lot of theory and not much hands-on. SO, I created DIVA for our Android developer training. Diva gamifies secure development learning. With that said, it is an excellent learning tool for aspiring Android penetration testers and security professionals as it gives an insight into app vulnerabilities including the source code. To sum it up:
@@ -34,7 +34,7 @@ I tried to put as much vulnerabilities as possible in a short period of time. I 
 13. Input Validation Issues – Part 3
 
 ## Can I contribute?
-Yes, you can help by sending us the details of vulnerabilities that we can implement in future versions of Diva. Please send an email to info [at] payatu.com with subject “DIVA Contribution”.
+Yes, you can help by sending us the details of vulnerabilities that we can implement in future versions of Diva. Please send an email to info[at]payatu.com with subject “DIVA Contribution”.
 
 ## Where can I get Diva?
 * The Source can be downloaded from github - https://github.com/payatu/diva-android
