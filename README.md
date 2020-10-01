@@ -34,7 +34,7 @@ I tried to put as much vulnerabilities as possible in a short period of time. I 
 13. Input Validation Issues – Part 3
 
 ## Can I contribute?
-Yes, you can help by sending us the details of vulnerabilities that we can implement in future versions of Diva. Please send an email to info [at] payatu.com with subject “DIVA Contribution”.
+Yes, you can help by sending us the details of vulnerabilities that we can implement in future versions of Diva. Please send an email to info[at]payatu.com with subject “DIVA Contribution”.
 
 ## Where can I get Diva?
 * The Source can be downloaded from github - https://github.com/payatu/diva-android
