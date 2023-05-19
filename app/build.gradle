@@ -27,6 +27,13 @@ android {
             jni.srcDirs = []
         }
     }
+    externalNativeBuild {
+        cmake {
+            version "3.22.1"
+        }
+    }
+    ndkVersion '25.2.9519653'
+    buildToolsVersion '33.0.0'
 }
 
 dependencies {
