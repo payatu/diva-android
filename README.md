@@ -1,3 +1,9 @@
+# Attention
+
+I've update the project to the a newer Android SDK version since it seems that the author is not willing to maintain it anymore. Besides I have kept the original README file as much as possible where ever it has a useful information.
+
+<br/>
+
 # DIVA Android
 ---
 ## What is DIVA?
@@ -30,8 +36,8 @@ I tried to put as much vulnerabilities as possible in a short period of time. I 
 9. Access Control Issues – Part 1
 10. Access Control Issues – Part 2
 11. Access Control Issues – Part 3
-12. Hardcoding Issues – Part 2
-13. Input Validation Issues – Part 3
+12. Hardcoding Issues – Part 2  **(Not fixed for the new Android SDK)**
+13. Input Validation Issues – Part 3 **(Not fixed for the new Android SDK)**
 
 ## Can I contribute?
 Yes, you can help by sending us the details of vulnerabilities that we can implement in future versions of Diva. Please send an email to info [at] payatu.com with subject “DIVA Contribution”.
@@ -65,17 +71,7 @@ We would love to hear from you about your experience with Diva. Please send us a
 
 ## Author
 Aseem Jakhar
-
-## About Payatu
-Payatu is a boutique security testing company with specialization in:
-* IoT Security
-* Mobile Security
-* Cloud security
-* Web Security
-
-We also organize two International Security Conferences
-* nullcon International Security Conference - http://nullcon.net
-* hardwear.io Hardware Security Conference - http://hardwear.io
-
 **Website:** http://payatu.com
 **Email:** info (at) payatu dot com
+
+

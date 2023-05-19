@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="jakhar.aseem.diva" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,7 +15,8 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,7 +61,8 @@
         </activity>
         <activity
             android:name=".APICredsActivity"
-            android:label="@string/apic_label" >
+            android:label="@string/apic_label"
+            android:exported="true">
             <intent-filter>
                 <action android:name="jakhar.aseem.diva.action.VIEW_CREDS" />
 
@@ -73,7 +75,8 @@
         </activity>
         <activity
             android:name=".APICreds2Activity"
-            android:label="@string/apic2_label" >
+            android:label="@string/apic2_label"
+            android:exported="true">
             <intent-filter>
                 <action android:name="jakhar.aseem.diva.action.VIEW_CREDS2" />
 
