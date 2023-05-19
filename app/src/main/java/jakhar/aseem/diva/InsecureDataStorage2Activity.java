@@ -31,17 +31,14 @@
  */
 package jakhar.aseem.diva;
 
-import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.io.File;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class InsecureDataStorage2Activity extends AppCompatActivity {
 
